@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | About</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<style>
+        body { scroll-behavior: smooth; }
+         /* MODERN PORTFOLIO BRAND TITLE */
+.portfolio-brand {
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    background: linear-gradient(45deg, #61efff, #00e1ff, #0095ff, #7b5bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+/* Glow Hover */
+.portfolio-brand:hover {
+    transform: scale(1.07);
+    filter: drop-shadow(0 0 8px #4cd8ff);
+}
+
+/* Underline animation */
+.portfolio-brand::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #61efff, #0095ff);
+    transition: width 0.35s;
+}
+
+.portfolio-brand:hover::after {
+    width: 100%;
+}
+
+
+
+          /* NAVBAR HOVER EFFECT */
+    .navbar-nav .nav-link {
+        position: relative;
+        font-size: 1.05rem;
+        color: #29EDFF !important;
+        transition: 0.3s ease-in-out;
+    }
+    .navbar-nav .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0%;
+        height: 3px;
+        background: #29EDFF;
+        border-radius: 50px;
+        transition: width 0.4s ease;
+    }
+    .navbar-nav .nav-link:hover::after {
+        width: 100%;
+    }
+    .navbar-nav .nav-link:hover {
+        color:#29EDFF !important;
+        transform: scale(1.05);
+    }
+
+        .about-title {
+                font-size: 32px;
+                font-weight: 700;
+        }
+
+        .about-text {
+                font-size: 17px;
+                color: #555;
+                line-height: 1.7;
+        }
+
+        .skill-bar {
+                height: 10px;
+                background: #e6e6e6;
+                border-radius: 50px;
+                overflow: hidden;
+        }
+
+        .skill-progress {
+                height: 10px;
+                background: #007bff;
+        }
+
+        .certificate a {
+                text-decoration: none;
+                color: #007bff;
+                font-weight: 500;
+        }
+
+        .certificate a:hover { color: #0056b3; }
+
+        .profile-img {
+                border-radius: 15px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+
+        <!-- MODERN PORTFOLIO BRAND -->
+        <a class="navbar-brand portfolio-brand" >
+            Portfolio
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- About Section -->
+<section class="py-5 mt-4">
+    <div class="container" data-aos="fade-up">
+
+        <h2 class="text-center mb-4 about-title">About Me</h2>
+
+        <div class="row align-items-center">
+
+            <!-- Left Content -->
+            <div class="col-md-6">
+                <p class="about-text">
+                    Hi! I am <b>Lalit Panchal</b>, a passionate and creative freelancer specializing in
+                    <b>Data Entry, ID Card Design, Logo Creation, Banner & Poster Design, and Video Editing</b>.
+                    I believe in delivering high-quality work with professional finishing that helps clients grow
+                    their business, brand, and online presence.
+                </p>
+
+                <p class="about-text">
+                    With strong knowledge of modern tools and design principles, I create visually appealing,
+                    clean and impactful designs. My goal is always to provide fast, accurate and polished results.
+                </p>
+
+                <hr>
+
+                <!-- Skills Section -->
+                <h5 class="mt-3"><b>My Skills</b></h5>
+
+                <p class="mb-1">Graphic Design</p>
+                <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+
+                <p class="mb-1">Data Entry & Typing</p>
+                <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+
+                <p class="mb-1">Video Editing</p>
+                <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                </div>
+
+                <p class="mb-1">Logo & Branding</p>
+                <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+
+                <p class="mb-1">Web Development</p>
+                <div class="skill-bar mb-3">
+                        <div class="skill-progress" style="width: 50%;"></div>
+                </div>
+
+                <hr>
+
+                <!-- Certificates -->
+                <h5 class="mt-3"><b>Education & Certificates</b></h5>
+                <ul class="certificate">
+                    <li><b>College:</b> ITI Electrician College</li>
+                    <li><a href="#" target="_blank">Computer Basics Certificate</a></li>
+                   
+                </ul>
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-md-6 text-center">
+               <img src="images/about.png" alt="My Image" width="300" height="300">
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+     <!-- Footer -->
+<footer class="text-center text-white bg-dark py-3">
+    © 2025 Lalit Panchal. All Rights Reserved.
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>AOS.init({ duration: 1000 });</script>
+
+</body>
+</html>
